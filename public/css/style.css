@@ -113,3 +113,86 @@ th {
 #message {
     overflow-wrap: anywhere;
 }
+
+
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+    gap: 16px;
+    margin: 24px 0;
+}
+
+.dashboard-card {
+    padding: 18px;
+    background: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+}
+
+.dashboard-card h3 {
+    margin-top: 0;
+    font-size: 15px;
+    color: #475569;
+}
+
+.dashboard-card p {
+    font-size: 20px;
+    font-weight: bold;
+    overflow-wrap: anywhere;
+}
+
+.dashboard-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.dashboard-links a {
+    color: #166534;
+    font-weight: bold;
+}
+
+
+/* Centered navigation bar */
+.main-nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    width: 100%;
+    padding: 16px;
+    margin: 0 auto 24px;
+    background-color: #166534;
+    border-radius: 10px;
+}
+
+.main-nav a {
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px 16px;
+    border-radius: 6px;
+    transition: background-color 0.2s ease;
+}
+
+.main-nav a:hover,
+.main-nav a:focus-visible {
+    background-color: #14532d;
+    outline: none;
+}
+
+/* Better spacing on small screens */
+@media (max-width: 480px) {
+    .main-nav {
+        gap: 4px;
+        padding: 10px;
+    }
+
+    .main-nav a {
+        padding: 9px 10px;
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Susu Savings Dashboard</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/dashboard.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <h1>Susu Savings Dashboard</h1>
+        <p>Overview of your rotating savings group.</p>
+
+        <section class="dashboard-grid">
+            <article class="dashboard-card">
+                <h3>Current Week</h3>
+                <p id="current-week">Loading...</p>
+                <small id="week-status"></small>
+            </article>
+
+            <article class="dashboard-card">
+                <h3>Registered Members</h3>
+                <p id="member-count">Loading...</p>
+            </article>
+
+            <article class="dashboard-card">
+                <h3>Weekly Contribution</h3>
+                <p id="weekly-amount">Loading...</p>
+            </article>
+
+            <article class="dashboard-card">
+                <h3>Collected This Week</h3>
+                <p id="collected-amount">Loading...</p>
+            </article>
+
+            <article class="dashboard-card">
+                <h3>Next Recipient</h3>
+                <p id="next-recipient">Loading...</p>
+            </article>
+
+            <article class="dashboard-card">
+                <h3>Total Payouts</h3>
+                <p id="total-payouts">Loading...</p>
+                <small id="payout-count"></small>
+            </article>
+        </section>
+
+        <h2>Payout History</h2>
+
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Week</th>
+                        <th>Recipient</th>
+                        <th>Amount (KSh)</th>
+                        <th>Date</th>
+                    </tr>
+                </thead>
+                <tbody id="payout-history">
+                    <tr>
+                        <td colspan="4">Loading payout history...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <nav class="dashboard-links">
+            <a href="members.html">Members</a>
+            <a href="contributions.html">Contributions</a>
+            <a href="close-week.html">Close Week</a>
+        </nav>
+
+        <p id="dashboard-message" role="status" aria-live="polite"></p>
+    </main>
+</body>
+</html>
