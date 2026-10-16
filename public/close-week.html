@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Susu - Close Week</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/close-week.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <h1>Susu Savings Group</h1>
+        <h2>Close Week and Pay Out</h2>
+
+        <p>
+            Close the current week only after every member has paid
+            their full contribution.
+        </p>
+
+        <section class="summary">
+            <p>Current week: <strong id="week-number">Loading...</strong></p>
+            <p>Weekly contribution: <strong id="weekly-amount">Loading...</strong></p>
+        </section>
+
+        <button id="close-week-button" type="button">
+            Close Week and Pay Out
+        </button>
+
+        <p id="message" role="status" aria-live="polite"></p>
+        <ul id="unpaid-list"></ul>
+
+        <p><a href="contributions.html">Back to Contributions</a></p>
+    </main>
+</body>
+</html>

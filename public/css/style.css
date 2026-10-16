@@ -65,3 +65,51 @@ button:disabled {
     padding: 10px 0;
     border-bottom: 1px solid #e5e7eb;
 }
+
+
+
+.summary {
+    margin: 20px 0;
+    padding: 16px;
+    background: #f0fdf4;
+    border-radius: 8px;
+}
+
+.summary p {
+    margin: 8px 0;
+}
+
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    background: white;
+    font-size: 16px;
+}
+
+.table-wrapper {
+    width: 100%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 12px;
+}
+
+th,
+td {
+    padding: 12px;
+    border-bottom: 1px solid #e5e7eb;
+    text-align: left;
+}
+
+th {
+    background: #f1f5f9;
+}
+
+#message {
+    overflow-wrap: anywhere;
+}

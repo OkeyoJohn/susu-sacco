@@ -1,0 +1,66 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Susu - Weekly Contributions</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/contributions.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <h1>Susu Savings Group</h1>
+        <h2>Weekly Contributions</h2>
+
+        <section class="summary">
+            <p>Current week: <strong id="current-week">Loading...</strong></p>
+            <p>Required contribution: <strong id="weekly-amount">Loading...</strong></p>
+        </section>
+
+        <h2>Record a Payment</h2>
+
+        <form id="contribution-form">
+            <label for="member-id">Select member</label>
+            <select id="member-id" required>
+                <option value="">Loading members...</option>
+            </select>
+
+            <label for="amount">Amount (KSh)</label>
+            <input
+                type="number"
+                id="amount"
+                min="0.01"
+                step="0.01"
+                placeholder="e.g. 200.00"
+                required
+            >
+
+            <button type="submit">Record Payment</button>
+        </form>
+
+        <p id="message" role="status" aria-live="polite"></p>
+
+        <h2>Member Balances</h2>
+
+        <div class="table-wrapper">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Member</th>
+                        <th>Paid (KSh)</th>
+                        <th>Still Owes (KSh)</th>
+                    </tr>
+                </thead>
+                <tbody id="balance-list">
+                    <tr>
+                        <td colspan="3">Loading balances...</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <p><a href="members.html">Manage Members</a></p>
+    </main>
+</body>
+</html>
