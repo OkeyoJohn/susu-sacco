@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Susu - Members</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="js/app.js" defer></script>
+</head>
+<body>
+    <main class="container">
+        <h1>Susu Savings Group</h1>
+        <h2>Register Members</h2>
+
+        <form id="member-form">
+            <label for="member-name">Member name or ID</label>
+            <input
+                type="text"
+                id="member-name"
+                name="name"
+                maxlength="100"
+                placeholder="e.g. Ama"
+                required
+            >
+            <button type="submit">Add Member</button>
+        </form>
+
+        <p id="message" role="status" aria-live="polite"></p>
+
+        <h2>Registered Members</h2>
+        <ol id="member-list"></ol>
+    </main>
+</body>
+</html>
