@@ -5,7 +5,7 @@ COLLATE utf8mb4_unicode_ci;
 
 USE susu_db;
 
--- 1. Store the savings group configuration.
+
 CREATE TABLE settings (
     id TINYINT UNSIGNED PRIMARY KEY,
     weekly_contribution_pesewas BIGINT UNSIGNED NOT NULL,

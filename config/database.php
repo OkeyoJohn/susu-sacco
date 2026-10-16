@@ -4,7 +4,7 @@
 $host = 'localhost';
 $dbname = 'susu_db';
 $username = 'root';
-$password = ''; // Default XAMPP setup; change if you set a password.
+$password = ''; 
 
 try {
     $pdo = new PDO(
